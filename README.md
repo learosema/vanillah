@@ -35,7 +35,7 @@ choosing "Babel" as preprocessor and adding a directive to use `h()` as a jsx fa
 
 ```jsx
 /* @jsx h */
-import vanillaH from 'https://unpkg.com/vanilla?module';
+import vanillaH from 'https://unpkg.com/vanillah?module';
 
 const h = vanillaH(document);
 
