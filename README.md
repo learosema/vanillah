@@ -58,7 +58,7 @@ This may be a bit cumbersome. But there's a library which allows you to use temp
 
 - [Example on Codepen](https://codepen.io/learosema/pen/QWZQWYQ/b63155c1d5e5e12c06da404e4700a763?editors=0011)
 
-```
+```js
 import vanillaH from 'https://unpkg.com/vanillah?module';
 import htm from 'https://unpkg.com/htm?module';
 
