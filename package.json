@@ -2,8 +2,10 @@
   "name": "vanillah",
   "version": "0.0.0-development",
   "description": "A h() function in VanillaJS for use with JSX or HTM",
-  "main": "index.js",
-  "type": "module",
+  "main": "dist/vanillah.cjs.js",
+  "umd:main": "dist/vanillah.umd.js",
+  "module": "dist/vanillah.js",
+  "types": "dist/vanillah.d.ts",
   "exports": {
     ".": {
       "types": "./vanillah.d.ts",
