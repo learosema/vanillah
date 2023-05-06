@@ -5,7 +5,7 @@ Essentially, all vanillaH provides is a h() function that creates DOM nodes usin
 
 An [example using JSX](https://codepen.io/learosema/pen/GRYQKOe?editors=0010) is on Codepen.
 
-This is essentially what vanillaH does. I don't know how useful it is to you, but I'm using it in my personal projects.
+This is essentially what vanillaH does. I don't know how useful it is to you. Maybe not. ☺️
 
 ## Getting started
 
