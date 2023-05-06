@@ -1,0 +1,36 @@
+{
+  "name": "vanillah",
+  "version": "0.0.1",
+  "description": "A h() function in VanillaJS for use with JSX or HTM",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./vanillah.d.ts",
+      "browser": "./dist/vanillah.js",
+      "umd": "./dist/vanillah.umd.js",
+      "import": "./dist/vanillah.js",
+      "require": "./dist/vanillah.cjs.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/learosema/vanillah.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "ava",
+    "build": "rm -rf dist && rollup -c rollup.config.js && cp vanillah.d.ts dist/vanillah.d.ts"
+  },
+  "keywords": ["dom"],
+  "author": "Lea Rosema",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.1",
+    "ava": "^5.2.0",
+    "linkedom": "^0.14.26",
+    "rollup": "^3.21.5"
+  }
+}
