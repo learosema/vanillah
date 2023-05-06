@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "test": "ava",
-    "build": "rm -rf dist && rollup -c rollup.config.js && cp vanillah.d.ts dist/vanillah.d.ts",
+    "build": "rm -rf dist && rollup -c rollup.config.mjs && cp vanillah.d.ts dist/vanillah.d.ts",
     "semantic-release": "semantic-release"
   },
   "engines": {
