@@ -28,6 +28,10 @@ const snippet = <h1>Hello World</h1>
 document.body.appendChild(snippet);
 ```
 
+## Usage with esbuild
+
+You can [provide the jsx factory via esbuild](https://esbuild.github.io/content-types/#using-jsx-without-react).
+
 ## Usage on Codepen
 
 On Codepen, you can enable this by 
