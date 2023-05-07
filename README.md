@@ -66,6 +66,7 @@ This may be a bit cumbersome. But there's a library which allows you to use temp
 import vanillaH from 'https://unpkg.com/vanillah?module';
 import htm from 'https://unpkg.com/htm?module';
 
+const h = vanillaH(document);
 const html = htm.bind(h);
 
 const stuff = html`
