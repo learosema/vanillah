@@ -7,7 +7,11 @@ export default function vanillaH(document) {
   return function h(tagName, attribs, ...children) {
     const el = document.createElement(tagName);
     for (const [attrib, value] of Object.entries(attribs || {})) {
-      el.setAttribute(attrib === "className" ? "class" : attrib, value);
+      const jsx = {
+        "className" : "class",
+        "htmlFor": "for"
+      };
+      el.setAttribute(jsx[attrib] || attrib, value);
     }
     for (const child of children) {
       if (typeof child === "string") {
