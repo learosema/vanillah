@@ -24,6 +24,7 @@
   ],
   "scripts": {
     "test": "ava",
+    "lint": "eslint *.mjs",
     "build": "rm -rf dist && rollup -c rollup.config.mjs && cp vanillah.d.ts dist/vanillah.d.ts",
     "semantic-release": "semantic-release"
   },
@@ -33,6 +34,11 @@
   "release": {
     "branches": [
       "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm"
     ]
   },
   "keywords": [
@@ -42,8 +48,11 @@
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/npm": "^10.0.3",
+    "@semantic-release/release-notes-generator": "^11.0.1",
     "ava": "^5.2.0",
+    "eslint": "^8.40.0",
     "linkedom": "^0.14.26",
     "rollup": "^3.21.5",
     "semantic-release": "^21.0.2"
