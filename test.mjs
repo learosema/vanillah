@@ -1,6 +1,7 @@
 import test from 'ava';
-import vanillaH from './vanillah.js';
 import { parseHTML } from 'linkedom';
+
+import vanillaH from './vanillah.mjs';
 
 test('create a H1 element', t => {
   const { document } = parseHTML(`<body></body>`)
@@ -22,6 +23,21 @@ test('create a H1 element with a class', t => {
   );
 });
 
+test('create a div with a class using the jsx-specific className attribute', t => {
+  const { document } = parseHTML(`<body></body>`)
+  const h = vanillaH(document);
+  
+  const node = h('div', {className: 'wrapper'});
+  t.deepEqual(node.toString(), '<div class="wrapper"></div>');
+});
+
+test('create a label with a for attribute using the jsx-specific htmlFor attribute', t => {
+  const { document } = parseHTML(`<body></body>`)
+  const h = vanillaH(document);
+  
+  const node = h('label', {htmlFor: 'name'}, 'Name');
+  t.deepEqual(node.toString(), '<label for="name">Name</label>');
+});
 
 test('create a nested DOM structure', t => {
   const { document } = parseHTML(`<body></body>`)

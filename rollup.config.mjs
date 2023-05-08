@@ -1,7 +1,7 @@
 import terser from '@rollup/plugin-terser';
 
 export default {
-  input: 'vanillah.js',
+  input: 'vanillah.mjs',
   output: [
     {
       file: 'dist/vanillah.js',
