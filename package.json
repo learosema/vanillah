@@ -6,6 +6,7 @@
   "umd:main": "dist/vanillah.umd.js",
   "module": "dist/vanillah.js",
   "types": "dist/vanillah.d.ts",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./vanillah.d.ts",
@@ -29,7 +30,7 @@
     "semantic-release": "semantic-release"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "release": {
     "branches": [
